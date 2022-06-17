@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600;800;900&display=swap');
+:root {
+    --primary: hsl(322, 100%, 66%);
+    --neutral-very-pale-cyan: hsl(193, 100%, 96%);
+    --neutral-very-dark-cyan: hsl(192, 100%, 9%);
+    --neutral-grayish-blue: hsl(208, 11%, 55%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+
+}
+
+nav {
+    padding: 0 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--neutral-very-dark-cyan);
+    text-align: center;
+}
+
+section {
+    border: 1px solid hsla(208, 11%, 55%, 0.2);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px hsla(208, 11%, 55%, 0.2);
+    margin: 10px 20px;
+}
+
+p::first-letter {
+    text-transform: uppercase;
+}
+
+p, h1 {
+    color: var(--neutral-very-dark-cyan);
+    text-align: center;
+    margin: 20px 15px 30px;
+}
+
+li a.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+li a img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin: 0;
+}
+
+nav li a.sign-up {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 2px 4px 6px hsla(208, 11%, 55%, 0.2);
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+aside.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+/* .hero {
+    background-color: var(--neutral-very-pale-cyan);
+    background: url("../images/bg-hero-mobile.svg.png") center ;
+    background-color: aqua;
+    background-size: cover;
+} */
+
+.hero {
+    border: 0;
+    margin: 0 0 50px;
+    padding: 10px 0 30px;
+    border-radius: 0;
+    box-shadow: unset;
+    background: url("../images/bg-hero-mobile.svg.png") center;
+    background-color: aqua;
+}
+
+.sign-up-link {
+    background-color: var(--primary);
+    text-align: center;
+    margin: 0 30px 0;
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--neutral-very-pale-cyan);
+}
+
+.sign-up-link:hover {
+    cursor: pointer;
+    background-color: hsla(322, 100%, 66%, 0.6);
+}
+
+.hero-img, .section-image {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-img img, .section-image img {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.section-text h1 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.section-text p {
+    color: var(--neutral-grayish-blue);
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+.section-image img {
+    width: 70%;
+}
+
+.sign-up-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+    padding: 20px 0 40px;
+}
+
+.sign-up-section h1 {
+    font-size: 25px;
+    margin: 20px 0 30px;
+}
+
+.sign-up-section a {
+    padding: 15px;
+    margin: 0 40px;
+}
+
+footer {
+    background-color: var(--neutral-very-dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -80px;
+    padding: 80px 25px 10px;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-align: left;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer li {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+footer li img {
+    margin-right: 20px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.contacts {
+    margin-bottom: 60px;
+}
+
+.email {
+    text-transform: lowercase;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.social-media-links a:hover {
+    color: var(--primary);
+}
+
+[alt="Instagram icon"] {
+    width: 18px;
+    padding: 3px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+@media screen and (min-width: 376px) {
+    section {
+        margin: 40px 60px;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 50% auto;
+        align-items: center;
+    }
+
+    nav ul {
+        padding: 25px 15px;
+    }
+
+    h1, p {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+
+    li a.logo {
+        font-size: 30px;
+    }
+
+    li a.logo:hover, ul.contacts li a:hover {
+        text-decoration: none;
+    }
+
+    nav li a.sign-up {
+        font-size: 18px;
+        padding: 15px 25px;
+    }
+
+    .hero {
+        background: url("../images/bg-hero-desktop.svg.png");
+        padding-left: 60px;
+        grid-template-columns: 40% auto;
+    }
+
+    .hero nav {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+
+
+    aside.hero-text {
+        display: block;
+        margin-top: 40px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    aside.hero-img {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        margin: 40px 15px 50px;
+    }
+    .reverse {
+        direction: rtl;
+    }
+
+    .sign-up-link {
+        padding: 15px 60px;
+        margin: 0 15px;
+    }
+
+    .sign-up-section {
+        width: 50%;
+        margin: 100px auto 0;
+        padding: 60px 50px;
+        background-color: #fff;
+        position: relative;
+
+    }
+    
+    .sign-up-section h1 {
+        margin: 20px 0 30px;
+    }
+
+    .sign-up-section a {
+        padding: 20px 100px;
+        box-shadow: 2px 4px 8px hsla(208, 11%, 55%, 0.4);
+    }
+
+    footer {
+        margin: -100px auto 0;
+        padding: 120px 60px 0 100px;
+        font-size: 12px;
+    }
+
+    footer > ul {
+        display: grid;
+        grid-template-rows: 20% auto;
+        margin: 0;
+    }
+
+    footer li {
+        margin-top: 20px;
+    }
+
+    footer ul li, footer a {
+        text-align: left;
+    }
+
+    footer .footer-links {
+        display: grid;
+        grid-template-columns: 35% 15% 15% auto;
+        gap: 30px;
+    }
+
+    ul.contacts li {
+        display: grid;
+        grid-template-columns: 10% auto;
+        margin-bottom: 15px;
+    }
+
+    ul.contacts img {
+        width: 13px;
+    }
+
+    .contacts a {
+        text-transform: none;
+    }
+
+    .social-media-links {
+        display: grid;
+        grid-template-columns: 50px 50px auto;
+        margin-top: 0;
+    }
+
+
+    footer p {
+        margin-top: 0;
+        text-align: right;
+    }
+
+}
